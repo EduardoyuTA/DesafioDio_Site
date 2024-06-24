@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Atendimento - Clínica Médica</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            background-color: #d4d4d4;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            background-color: rgb(6, 83, 114);
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 15%;
+            background-color: rgb(207, 209, 209);
+            padding: 10px 20px 0px;
+        }
+        .header {
+            background-color: rgb(150, 248, 248);
+            min-height: 150px;
+        }
+        .content {
+            background-color: white;
+            min-height: 300px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: rgb(80, 187, 248);
+            min-height: 150px;
+        }
+        table thead th {
+            background-color: rgb(67, 140, 158);
+            color:white;
+        }
+        table tfoot th {
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) td {
+          background-color: #69b3b8;
+        }
+        table tbody tr:hover td {
+          background-color: #5eaece;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <!-- Aqui vai o menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="paginadois.html">Sobre a Clínica</a></li>
+                <li><a href="paginatres.html">Horário de Atendimento</a></li>
+                <li><a href="paginaquatro.html">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header com uma imagem diferente -->
+                <img src="horario-header-image.jpg" alt="Horário de Atendimento" style="width:100%; height:auto;">
+            </div>
+
+            <div class="content" id="horario">
+                <h2>Horário de Atendimento</h2>
+                <p>Nossa clínica oferece uma variedade de serviços com horários flexíveis para melhor atender nossos pacientes. Confira abaixo nossos horários de funcionamento:</p>
+                <table cellpadding="10" cellspacing="0" align="center">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                Footer
+                <!-- Aqui vai o seu footer com informações de contato -->
+                <p>&copy; 2024 Clínica Médica. Todos os direitos reservados.</p>
+                <p>Email: contato@clinicamedica.com.br | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123, Centro, Cidade - Estado</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
