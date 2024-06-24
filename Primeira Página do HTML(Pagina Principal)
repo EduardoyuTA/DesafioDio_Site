@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica</title>
+     <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            background-color: #d4d4d4;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            background-color: rgb(6, 83, 114);
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 15%;
+            background-color: rgb(207, 209, 209);
+            padding: 10px 20px 0px;
+        }
+        .header {
+            background-color: rgb(150, 248, 248);
+            min-height: 150px;
+        }
+        .content {
+            background-color: white;
+            min-height: 300px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: rgb(32, 101, 250);
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <!-- Aqui vai o menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="paginadois.html">Sobre a Clínica</a></li>
+                <li><a href="paginatres.html">Horário de Atendimento</a></li>
+                <li><a href="paginaquatro.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header com imagem -->
+                <img src="salaatendimento1.jpg" alt="Clínica Médica" style="width:100%; height:auto;">
+            </div>
+
+            <div class="content" id="home">
+                <h2>Bem-vindo à Nossa Clínica Médica</h2>
+                <p>Oferecemos atendimento médico de qualidade com uma equipe de profissionais experientes. Nossa clínica é dedicada a fornecer cuidados médicos abrangentes e personalizados, garantindo o bem-estar e a saúde de nossos pacientes.</p>
+                <p>Estamos comprometidos em proporcionar um ambiente acolhedor e seguro, onde cada paciente é tratado com respeito e atenção. Venha nos visitar e descubra como podemos ajudar a cuidar da sua saúde.</p>
+            </div>
+
+            <div class="footer">
+                Footer
+                <!-- Aqui vai o seu footer com informações de contato -->
+                <p>&copy; 2024 Clínica Médica. Todos os direitos reservados.</p>
+                <p>Email: contato@clinicamedica.com.br | Telefone: (11) 1234-5678 | Endereço: Rua Exemplo, 123, Centro, Cidade - Estado</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
